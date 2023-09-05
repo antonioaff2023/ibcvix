@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.licao h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.licao h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.licao h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.licao p,
+.fontes {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    text-align: justify;
+    margin-right: 10px;
+}
+
+.fontes {
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70vw;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #e7bd71;
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+
+td {
+    font-size: 1.4em;
+
+}
+
+.coluna-esquerda {
+    /* Defina aqui o tamanho da coluna da esquerda (50% do tamanho total da tabela) */
+    width: 15vw;
+}
+
+.coluna-direita {
+    /* Defina aqui o tamanho da coluna da direita (o dobro do tamanho da coluna da esquerda) */
+    width: 20vw;
+}
