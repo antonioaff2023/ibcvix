@@ -1,0 +1,118 @@
+@page {
+    margin: 35mm 15mm 20mm 15mm;
+}
+#head{
+    font-size: 16px;
+    text-align: center;
+    height: 25mm;
+    width: 100%;
+    position: fixed;
+    top: -27mm;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-bottom: solid 2px;
+    
+    
+}
+#corpo{
+    width: 100%;
+    position: relative;
+    margin: auto;
+      
+}
+
+.manual { 
+    
+    text-align: justify;
+}
+
+.citacao {
+    margin-left: 30px !important;
+}
+
+
+.manual h1,
+.manual h2,
+.manual h3,
+.manual h4,
+.artigo {
+    
+    text-indent: 30px !important;
+    
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    position: relative;
+}
+td{
+    padding: 3px;
+}
+#footer {
+    position: fixed;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid black;
+    font-size: 12px;
+    
+}
+
+#footer .page:after{ 
+    content: counter(page); 
+}
+table, th, td {
+    
+    border-collapse: collapse;
+
+}
+
+
+
+th, td {
+    padding: 2px;
+    text-align: left;
+    width: 220px;
+}
+
+
+
+
+.logo {
+    width: 20%;
+    display: inline-block;
+}
+
+.texto {
+    width: 78%;
+    display: inline-block;
+}
+
+.logo img {
+    width: 25mm;
+}
+
+.texto {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+    margin: 0px;
+}
+
+.texto h1 {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.texto p {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}

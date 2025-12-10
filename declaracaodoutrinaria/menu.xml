@@ -1,0 +1,120 @@
+<menu>
+    <menuitem label='Preâmbulo'>
+        <icon>fa:file-lines</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=introducao</action>
+    </menuitem>
+    <menuitem label='Escrituras Sagradas'>
+        <icon>fa:book-bible</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=biblia</action>
+    </menuitem>
+
+    <menuitem label='Deus'>
+        <icon>fa:cloud</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=deus</action>
+        <menu>
+            <menuitem label='Deus-pai'>
+                <icon>fa:cloud-sun</icon>
+                <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=pai</action>
+            </menuitem>
+
+
+            <menuitem label='Deus-filho'>
+                <icon>fa:cross</icon>
+                <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=filho</action>
+            </menuitem>
+
+
+            <menuitem label='Deus-Espírito Santo'>
+                <icon>fa:dove</icon>
+                <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=espirito</action>
+            </menuitem>
+        </menu>
+
+    </menuitem>
+
+    <menuitem label='O homem'>
+        <icon>fa:person</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=homem</action>
+    </menuitem>
+
+    <menuitem label='O pecado'>
+        <icon>fa:person-falling-burst</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=pecado</action>
+    </menuitem>
+    <menuitem label='Salvação'>
+        <icon>fa:life-ring</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=salvacao</action>
+    </menuitem>
+
+
+    <menuitem label='Eleição'>
+        <icon>fa:hand-point-up</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=eleicao</action>
+    </menuitem>
+
+    <menuitem label='Reino de Deus'>
+        <icon>fa:chess-king</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=reino</action>
+    </menuitem>
+
+    <menuitem label='Igreja'>
+        <icon>fa:church</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=igreja</action>
+    </menuitem>
+
+    <menuitem label='O batismo e a ceia do Senhor'>
+        <icon>fa:water</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=ordenancas</action>
+    </menuitem>
+
+    <menuitem label='O dia do Senhor'>
+        <icon>fa:person-arrow-up-from-line</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=diadosenhor</action>
+    </menuitem>
+
+    <menuitem label='Ministério da Palavra'>
+        <icon>fa:book-open</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=ministerio</action>
+    </menuitem>
+
+    <menuitem label='Mordomia'>
+        <icon>fa:hand-holding-heart</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=mordomia</action>
+    </menuitem>
+
+    <menuitem label='Evangelização e Missões'>
+        <icon>fa:globe</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=evangelizacao</action>
+    </menuitem>
+
+    <menuitem label='Educação religiosa'>
+        <icon>fa:book-open-reader</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=educacao</action>
+    </menuitem>
+
+    <menuitem label='Liberdade religiosa'>
+        <icon>fa:unlock-keyhole</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=liberdade</action>
+    </menuitem>
+
+    <menuitem label='Ordem social'>
+        <icon>fa:people-line</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=ordem</action>
+    </menuitem>
+
+    <menuitem label='Família e casamento'>
+        <icon>fa:people-roof</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=liberdade</action>
+    </menuitem>
+
+    <menuitem label='Morte'>
+        <icon>fa:skull-crossbones</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=morte</action>
+    </menuitem>
+
+    <menuitem label='Justos e ímpios'>
+        <icon>fa:gavel</icon>
+        <action>DeclaracaoDoutrinaria#arquivo=declaracao#regiao=juizo</action>
+    </menuitem>
+
+</menu>

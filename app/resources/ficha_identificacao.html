@@ -1,0 +1,90 @@
+<!--[main]-->
+<style>
+    table {
+        width: 80%;
+        border-collapse: collapse;
+
+    }
+
+    th,
+    td {
+        padding: 8px;
+        text-align: left;
+        font-size: 1.3vw;
+
+
+    }
+
+    .col-12 {
+        width: 12%;
+    }
+
+    .descricao {
+        font-weight: bolder;
+
+    }
+</style>
+
+<body>
+
+    <table style="width: 100%; border-collapse: collapse;">
+        <tr>
+            <td class="col-12 centered-cell" rowspan="4">
+                <img style="width: 10vw; height: 20vh" src="app/images/photos/{$foto}" alt="Imagem">
+            </td>
+            <td>Nome: <span class='descricao'>{$nome_completo}</span> &nbsp &nbsp &nbsp &nbsp Apelido: <span
+                    class='descricao'>{$apelido}</span> &nbsp &nbsp &nbsp &nbsp Sexo: <span class='descricao'> {$genero}
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>Data de nascimento: <span class='descricao'> {$data_nascimento} </span> &nbsp &nbsp &nbsp &nbsp
+                Nacionalidade: <span class='descricao'> {$nacionalidade} </span> &nbsp &nbsp &nbsp &nbsp Estado Civil:
+                <span class='descricao'> {$estado_civil} </span></td>
+        </tr>
+        <tr>
+            <td>Categoria: <span class='descricao'> {$categoria} </span> &nbsp &nbsp &nbsp &nbsp Pai: <span
+                    class='descricao'> {$pai} </span> &nbsp &nbsp &nbsp &nbsp Mãe: <span class='descricao'> {$mae}
+                </span></td>
+        </tr>
+        <tr>
+            <td>Cônjuge: <span class='descricao'> {$conjuge} </span> &nbsp &nbsp &nbsp &nbsp Evangélico? <span
+                    class='descricao'> {$conjuge_cristao} </span></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="border-top: 1px solid; border-bottom: 1px solid;">CONTATO E ENDEREÇO</td>
+        </tr>
+        <tr>
+            <td colspan="2">Fone 1: <span class='descricao'> {$fone01} </span> &nbsp &nbsp &nbsp &nbsp Fone 2: <span
+                    class='descricao'> {$fone02} </span> &nbsp &nbsp &nbsp &nbsp E-mail: <span class='descricao'>
+                    {$email01} </span> </td>
+        </tr>
+        <tr>
+            <td colspan="2">Endereço: <span class='descricao'> {$endereco} </span></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="border-top: 1px solid; border-bottom: 1px solid;">DADOS ECLESIÁSTICOS</td>
+        </tr>
+        <tr>
+            <td colspan="2">Data da conversão: <span class='descricao'> {$data_conversao} </span> &nbsp &nbsp &nbsp
+                &nbsp Batizado?<span class='descricao'> {$batizado} </span> &nbsp &nbsp &nbsp &nbsp Data de batismo:
+                <span class='descricao'> {$data_batismo} </span> </td>
+        </tr>
+        <tr>
+            <td colspan="2">Ministro que batizou: <span class='descricao'> {$ministro_batismo} </span> &nbsp &nbsp &nbsp
+                &nbsp Igreja Anterior: <span class='descricao'> {$igreja_anterior} </span> </td>
+        </tr>
+        <tr>
+
+            <td colspan="2">Notas: <span class='descricao'> {$notas} </span> </td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
+<!--[/main]-->

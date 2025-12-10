@@ -1,0 +1,81 @@
+<!--[main]-->
+
+<head>
+
+</head>
+
+<body class="corpo_mes">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 mx-auto">
+                <div class="d-flex justify-content-left align-items-center">
+                    <div class="month-selector d-flex flex-wrap">
+                        <button class="mes-bto" id="1">JAN</button>
+                        <button class="mes-bto" id="2">FEV</button>
+                        <button class="mes-bto" id="3">MAR</button>
+                        <button class="mes-bto" id="4">ABR</button>
+                        <button class="mes-bto" id="5">MAI</button>
+                        <button class="mes-bto" id="6">JUN</button>
+                        <button class="mes-bto" id="7">JUL</button>
+                        <button class="mes-bto" id="8">AGO</button>
+                        <button class="mes-bto" id="9">SET</button>
+                        <button class="mes-bto" id="10">OUT</button>
+                        <button class="mes-bto" id="11">NOV</button>
+                        <button class="mes-bto" id="12">DEZ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Gere um número aleatório para evitar o cache do navegador
+        const cacheBuster = Math.random();
+
+        // URL do script JavaScript com o parâmetro de consulta
+        const scriptUrl = 'seu_script.js?cache=' + cacheBuster;
+
+        // Crie um elemento de script e defina o src para o URL com o parâmetro de consulta
+        const scriptElement = document.createElement('script');
+        scriptElement.src = scriptUrl;
+
+        // Adicione o elemento de script ao corpo do documento
+        document.body.appendChild(scriptElement);
+    </script>
+    <script>
+        // Verificar se há um valor armazenado para o mês selecionado
+        const storedMonth = localStorage.getItem('selectedMonth');
+        let currentMonth = storedMonth ? parseInt(storedMonth) : (new Date().getMonth() + 1); // Se não houver, use o mês atual
+
+        // Obter todos os botões do mês
+        const monthButtons = document.querySelectorAll('.mes-bto');
+
+        // Definir o botão do mês atual como selecionado
+        monthButtons[currentMonth - 1].classList.add('selected');
+
+        // Adicionar ouvinte de evento a cada botão
+        monthButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                const monthId = button.id; // Obter o ID do mês a partir da ID do botão
+
+                // Atualizar classes para os botões do mês selecionado e do próximo mês
+                monthButtons.forEach(btn => {
+                    btn.classList.remove('selected', 'next-selected');
+                });
+                button.classList.add('selected');
+
+                // Calcular e manipular o estilo do botão do próximo mês
+                const nextMonthIndex = (index + 1) % 12;
+                monthButtons[nextMonthIndex].classList.add('next-selected');
+
+                // Armazenar o mês selecionado no Local Storage
+                localStorage.setItem('selectedMonth', monthId);
+
+                // Redirecionar para Aniversariantes com o ID do mês no parâmetro URL
+                window.location.href = 'index.php?class=Aniversariantes&mes=' + monthId;
+            });
+        });
+    </script>
+
+</body>
+<!--[/main]-->

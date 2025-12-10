@@ -1,0 +1,9 @@
+<menu>
+    <menuitem>
+      <icon>fa:id-badge</icon>
+      <action>LoginForm</action>
+      <title>ÁREA DO MEMBRO</title>
+      <label>ÁREA DO MEMBRO</label>
+      <mobile>Y</mobile>
+    </menuitem>
+</menu>

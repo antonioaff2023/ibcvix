@@ -1,0 +1,126 @@
+
+#sidebar.collapsed #top-menu,
+#sidebar.collapsed #corpo-menu,
+#sidebar.collapsed #bottom-menu {
+        margin-left: calc(-1 * var(--ad-menu-size));
+}
+#sidebar,
+#top-menu,
+#corpo-menu,
+#bottom-menu {
+    transition: all 0.35s ease-in-out !important;
+}
+
+
+
+#top-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    margin: 0px;
+    padding: 0px;
+    height: 80px;
+    vertical-align: middle;
+    align-content: center;
+    width: 300px;
+    border-radius: 0px 20px 0px 0px;
+    
+
+}
+
+#bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: aliceblue;
+    border-top: solid 1px rgb(155, 158, 158);
+    margin: 0px;
+    padding: 0px;
+    height: 80px;
+    width: 300px;
+    border-radius: 0px 0px 20px 0px;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Opcional: Centraliza verticalmente */
+    gap: 10px; /* Adiciona espaço entre os botões */
+    background-color: var(--bs-dark);
+
+    
+
+}
+/* 
+#sidebar.collapsed #top-menu,
+#sidebar.collapsed #corpo-menu
+{
+    display: none;
+} */
+
+
+
+#corpo-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    
+    height: 82%;
+    overflow-y: auto;
+}
+
+
+
+.manual { 
+    margin: 20px;
+    text-align: justify;
+}
+
+.citacao {
+    margin-left: 30px !important;
+}
+
+
+.manual h1,
+.manual h2,
+.manual h3,
+.artigo {
+    
+    text-indent: 30px !important;
+    
+}
+
+
+#logout_btn,
+#pdf_btn {
+    border: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 2px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+
+    transition: all 1s !important;    /* Transição para o efeito */
+}
+
+
+
+#logout_btn {
+    background-color: rgb(243, 64, 64) !important;
+}
+
+#logout_btn:hover {
+    background-color: rgb(243, 168, 183) !important;
+}
+
+#pdf_btn {
+    background-color: rgb(64, 248, 156) !important;
+
+}
+
+#pdf_btn:hover {
+    background-color: rgb(231, 243, 233) !important;
+
+}

@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFFCE9;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-bar .social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #555555;   
+    
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+
+.top-bar .social-icons a:last-child {
+    margin-right: 0; 
+}
+
+.top-bar .member-area {
+    background-color: #F58634;
+    color: #070707;
+    font-weight: bolder;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.top-bar .member-area:hover {
+    background-color: #f8b789;
+}
+
+.main-menu {
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f2fadd;
+
+    color: rgb(12, 11, 11);
+    font-weight: bolder;
+}
+
+.main-menu .logo img {
+    max-height: 50px;
+}
+
+.main-menu .menu-links {
+    display: flex;
+    gap: 20px;
+}
+
+.main-menu .menu-links a {
+    text-decoration: none;
+    color: #080808;
+    font-weight: bold;
+}
+
+.main-menu .menu-links a:hover {
+    color: #62A8EE;
+}
+
+.menu-links {
+    width: 80%;
+    padding-left: 10%;
+    color: white;
+    
+}
+
+.logo {
+    width: 20%;
+    
+}
+
+.social-icons img {
+    width: 25px;
+}
+
+
+
+
+.main-menu .menu-links .submenu a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #333;
+}
+
+.main-menu .menu-links .submenu a:hover {
+    color: #62A8EE;
+}
+
+.main-menu .menu-links .menu-item {
+    position: relative;
+}
+
+.main-menu .menu-links .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #F58634;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 120px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+
+.main-menu .menu-links .menu-item.active .submenu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/*Carrossel automático*/
+.carrossel {
+    filter: drop-shadow(0px 0px 10px #000);
+    overflow: hidden; /* Garante que apenas uma imagem seja visível */
+    width: 100%; /* Responsivo: ajusta a largura do carrossel */
+    height: 50em;; /* Define uma altura fixa */
+    position: relative;
+  }
+  
+  .conteudo {
+    display: flex;
+    transition: transform 0.7s ease-in-out; /* Transição suave entre slides */
+    width: 100%;
+  }
+  
+  .conteudo img {
+    flex-shrink: 0; /* Impede que as imagens encolham */
+    width: 100%; /* Ocupa toda a largura do carrossel */
+    height: 100%; /* Preenche a altura do carrossel */
+    object-fit: cover; /* Ajusta as imagens para preencher sem distorção */
+  }
+  
+  .carrossel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .carrossel button.prev {
+    left: 10px;
+  }
+  
+  .carrossel button.next {
+    right: 10px;
+  }
+  
+  .carrossel .bullets {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .carrossel .bullets span {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .carrossel .bullets span.active {
+    background-color: white;
+  }
+  
+  .nav-item a, .nav-item i {
+    color: #3E4095 !important;
+    font-weight: 600;
+  }
+
+  
+/*Estiliza botões para formulário de meses*/
+.mes-bto {
+    background-color: #ccc;
+    border: none;
+    padding: 5px 10px;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+    /*font-weight: bolder;*/
+   
+}
+
+.mes-bto:hover {
+    background-color: #ddd;
+}
+
+.mes-bto.selected {
+    background-color: #007bff;
+    /* Blue for selected button */
+    color: white;
+    /* White text for selected button */
+}
+
+.mes-bto.selected:hover {
+    background-color: #2169b6;
+    /* Blue for selected button */
+    color: white;
+    /* White text for selected button */
+}
+
+.mes-bto.next-selected {
+    background-color: #ddd;
+    /* Green for next month button */
+}
+
+/*Padroniza os títulos dos formulários e paineis*/
+
+.titulo-form {
+    font-size: 30px;
+    color: yellow; 
+    font-weight: bolder;
+    
+    align-content: center;
+}
+
+.card-header {
+    background-color: #070707 !important;
+}
